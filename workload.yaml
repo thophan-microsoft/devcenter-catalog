@@ -1,0 +1,6 @@
+$schema: "1.0"
+name: thophan-devbox-customization
+tasks:
+  - name: choco
+    parameters:
+      package: vscode
