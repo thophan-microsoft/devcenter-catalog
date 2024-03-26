@@ -1,6 +1,11 @@
-$schema: "1.0"
+$schema: 1.0
 name: thophan-devbox-customization
 tasks:
   - name: choco
+    description: Install VS Code
     parameters:
       package: vscode
+  - name: choco
+    description: Install Node JS
+    parameters:
+      package: nodejs.install
