@@ -1,0 +1,5 @@
+name: Sandbox-Linked
+summary: Sandbox environment using linked template
+description: Deploys a sandbox environment using a linked ARM template
+runner: ARM
+templatePath: azuredeploy.json
