@@ -1,0 +1,5 @@
+name: OutputsTest
+summary: Empty environment
+description: Deploys an empty environment
+runner: ARM
+templatePath: azuredeploy.json

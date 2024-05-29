@@ -1,0 +1,102 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "resources": [],
+    "outputs": {
+        "hostname": {
+            "type": "String",
+            "value": "teststring"
+        },
+        "testArray": {
+            "type": "Array",
+            "value": [
+                "one",
+                "two",
+                "three"
+            ]
+        },
+        "resource": {
+            "type": "Object",
+            "value": {
+                "apiVersion": "2019-07-01",
+                "location": "westus3",
+                "tags": {
+                    "azsecpack": "nonprod",
+                    "platformsettings.host_environment.service.platform_optedin_for_rootcerts": "true"
+                },
+                "properties": {
+                    "hardwareProfile": {
+                        "vmSize": "Standard_D2as_v4"
+                    },
+                    "provisioningState": "Succeeded",
+                    "vmId": "2d1eaed7-87fe-4128-b247-11e350ee4172",
+                    "additionalCapabilities": {},
+                    "storageProfile": {
+                        "imageReference": {
+                            "publisher": "MicrosoftWindowsDesktop",
+                            "offer": "Windows-10",
+                            "sku": "win10-22h2-entn-g2",
+                            "version": "latest",
+                            "exactVersion": "19045.4170.240307"
+                        },
+                        "osDisk": {
+                            "osType": "Windows",
+                            "name": "PJ-0402_OsDisk_1_1f9eb5ef12ad4cc78d453570902e2416",
+                            "createOption": "FromImage",
+                            "caching": "ReadWrite",
+                            "managedDisk": {
+                                "storageAccountType": "Premium_LRS",
+                                "id": "/subscriptions/3de261df-f2d8-4c00-a0ee-a0be30f1e48e/resourceGroups/PJ/providers/Microsoft.Compute/disks/PJ-0402_OsDisk_1_1f9eb5ef12ad4cc78d453570902e2416"
+                            },
+                            "diskSizeGB": 127
+                        },
+                        "dataDisks": []
+                    },
+                    "osProfile": {
+                        "computerName": "PJ-0402",
+                        "adminUsername": "pjtest",
+                        "windowsConfiguration": {
+                            "provisionVMAgent": true,
+                            "enableAutomaticUpdates": true
+                        },
+                        "secrets": [],
+                        "allowExtensionOperations": true,
+                        "requireGuestProvisionSignal": true
+                    },
+                    "networkProfile": {
+                        "networkInterfaces": [
+                            {
+                                "id": "/subscriptions/3de261df-f2d8-4c00-a0ee-a0be30f1e48e/resourceGroups/PJ/providers/Microsoft.Network/networkInterfaces/pj-0402394",
+                                "properties": {
+                                    "deleteOption": "Detach"
+                                }
+                            }
+                        ]
+                    },
+                    "diagnosticsProfile": {
+                        "bootDiagnostics": {
+                            "enabled": true
+                        }
+                    },
+                    "licenseType": "Windows_Client"
+                },
+                "condition": true,
+                "deploymentResourceLineInfo": {
+                    "lineNumber": 1,
+                    "linePosition": 2815
+                },
+                "isConditionTrue": true,
+                "subscriptionId": "3de261df-f2d8-4c00-a0ee-a0be30f1e48e",
+                "resourceGroupName": "PJ",
+                "scope": "",
+                "resourceId": "Microsoft.Compute/virtualMachines/PJ-0402",
+                "referenceApiVersion": "2019-07-01",
+                "existing": false,
+                "isTemplateResource": false,
+                "isAction": false,
+                "isExtensibleResourceReference": false,
+                "provisioningOperation": "Read"
+            }
+        }
+    }
+}
