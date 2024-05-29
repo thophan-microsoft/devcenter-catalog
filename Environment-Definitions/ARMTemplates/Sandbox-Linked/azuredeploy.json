@@ -17,30 +17,35 @@
     }
   ],
   "outputs": {
-    "testString": {
-      "type": "string",
-      "value": "testString"
-    },
-    "testBool": {
-      "type": "boolean",
-      "value": true
-    },
-    "testNum": {
-      "type": "number",
-      "value": 17
-    },
-    "testArray": {
-      "type": "array",
-      "value": [
-        "one", "two", "three"
-      ]
-    },
-    "testObj": {
+    "outputs": {
       "type": "object",
       "value": {
-        "testStr": "string",
-        "testBool": false,
-        "testNum": 0
+        "testString": {
+        "type": "string",
+        "value": "testString"
+        },
+        "testBool": {
+          "type": "boolean",
+          "value": true
+        },
+        "testNum": {
+          "type": "number",
+          "value": 17
+        },
+        "testArray": {
+          "type": "array",
+          "value": [
+            "one", "two", "three"
+          ]
+        },
+        "testObj": {
+          "type": "object",
+          "value": {
+            "testStr": "string",
+            "testBool": false,
+            "testNum": 0
+          }
+        }
       }
     }
   }
